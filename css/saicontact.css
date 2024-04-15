@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+  color: #582A89;
+  text-align: center;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #582A89;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+submit {
+    background-color: #582A89;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #582A89;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

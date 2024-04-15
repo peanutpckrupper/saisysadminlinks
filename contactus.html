@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="css/saicontact.css" rel="stylesheet" type="text/css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Header section includes SAI logo -->
+    <header>
+        <div id="head"><img height="65" width="250" src="images/sailogo.jpg" alt="SAI Logo"></div>
+    </header>
+    
+    <h1>Contact Us</h1>
+	
+	<!-- Main section includes the contact us form -->
+	
+	<div style="display: flex; justify-content: center;">
+    <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Contact-Name" placeholder="Your Name"><br><br>
+        <label for="email">Subject</label>
+        <input type="email" id="email" name="Contact-Email" placeholder="Problem Summary"><br><br>
+        <label for="message">Message</label>
+        <textarea id="message" name="Contact-Message" rows="6" cols="20" placeholder="Your Message"></textarea><br><br>
+        <button type="submit" onclick="sendEmail()">Send Email</button>
+		<button type="button" onclick="location.href='index.html'">Back</button>
+    </form>
+	</div>
+
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = 'trent.m.ferguson@gmail.com'; // emails main IT contact
+            const subject = 'Problem Summary'; // Problem summary form is the subject of the email
+            const message = `Name: ${name}\n\n${document.getElementById('message').value}`; // body of email includes user name and message
+
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`; // creates mailto link
+
+            window.location.href = mailtoLink; // opens mail client
+        }
+    </script>
+
+</body>
+</html>

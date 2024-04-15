@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2 {
+  color: #582A89;
+}
+
+a:hover {
+  color: red;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Changed 2fr to 1fr for more equal column widths */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Combined the repetitive CSS for #links1 to #links6 into a single rule */
+#links1,
+#links2,
+#links3,
+#links4,
+#links5,
+#links6 {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  border: 2px groove #582A89;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+input[type="button"] {
+    background-color: #582A89;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
